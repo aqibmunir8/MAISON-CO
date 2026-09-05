@@ -63,7 +63,7 @@ export function HeroBento() {
             {/* Background Texture & Ambient Visual */}
             <div className="absolute top-0 right-0 w-full sm:w-2/3 h-full overflow-hidden opacity-10 sm:opacity-15 pointer-events-none select-none">
               <img
-                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200&auto=format&fit=crop"
+                src="/assets/hero-sourdough.jpg"
                 alt="Freshly baked artisan sourdough loaf on stone counter"
                 className="w-full h-full object-cover object-center mix-blend-multiply transition-transform duration-700 group-hover:scale-105"
               />

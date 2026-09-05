@@ -48,8 +48,7 @@ const SPOTLIGHTS: SpotlightItem[] = [
     periodLabel: "Morning Highlight",
     periodIcon: Sun,
     timeSlot: "Served 7:00 AM – 3:30 PM",
-    image:
-      "https://images.unsplash.com/photo-1484723091739-30a097e8f929?q=80&w=1000&auto=format&fit=crop",
+    image: "/assets/spotlight-french-toast.jpg",
     actionType: "pickup",
   },
   {
@@ -70,8 +69,7 @@ const SPOTLIGHTS: SpotlightItem[] = [
     periodLabel: "Midday Highlight",
     periodIcon: Sparkles,
     timeSlot: "Served 11:30 AM – 4:30 PM",
-    image:
-      "https://images.unsplash.com/photo-1592417817098-8f3d6910985b?q=80&w=1000&auto=format&fit=crop",
+    image: "/assets/spotlight-burrata-tartine.jpg",
     actionType: "pickup",
   },
   {
@@ -92,8 +90,7 @@ const SPOTLIGHTS: SpotlightItem[] = [
     periodLabel: "Evening Brasserie Hearth",
     periodIcon: Moon,
     timeSlot: "Served 5:00 PM – 10:00 PM",
-    image:
-      "https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=1000&auto=format&fit=crop",
+    image: "/assets/spotlight-steak-frites.jpg",
     actionType: "reserve",
   },
 ];

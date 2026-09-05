@@ -31,8 +31,7 @@ const PILLARS: CraftPillar[] = [
       { label: "Bake Schedule", value: "3x Daily" },
       { label: "Lamination", value: "81 Butter Layers" },
     ],
-    image:
-      "https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=1000&auto=format&fit=crop",
+    image: "/assets/craft-boulangerie.jpg",
     alt: "Handcrafted golden sourdough croissants and rustic boules on bakery table",
     tag: "Artisanal Baking",
   },
@@ -48,8 +47,7 @@ const PILLARS: CraftPillar[] = [
       { label: "Extraction", value: "9-Bar Precision" },
       { label: "Roast Style", value: "Nordic Light" },
     ],
-    image:
-      "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=1000&auto=format&fit=crop",
+    image: "/assets/craft-roastery.jpg",
     alt: "Single-origin espresso extraction with velvety golden crema",
     tag: "Specialty Coffee",
   },
@@ -65,8 +63,7 @@ const PILLARS: CraftPillar[] = [
       { label: "Cellar", value: "150+ Natural Labels" },
       { label: "Dry-Aging", value: "45-Day Program" },
     ],
-    image:
-      "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1000&auto=format&fit=crop",
+    image: "/assets/craft-hearth.jpg",
     alt: "Sizzling prime steak over white oak glowing hearth fire",
     tag: "Hearth Gastronomy",
   },

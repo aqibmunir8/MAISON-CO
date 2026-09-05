@@ -49,8 +49,7 @@ const ATMOSPHERES: TimeZoneAtmosphere[] = [
     soundscape: "Soft acoustic jazz, hiss of steam wands, clatter of porcelain saucers",
     seating: "24 Walk-In Marble Counter Stools · Communal Baker’s Table",
     signatureRitual: "Fresh Kouign-Amann warm from hearth paired with a velvety Cortado",
-    image:
-      "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1200&auto=format&fit=crop",
+    image: "/assets/atmosphere-morning.jpg",
     alt: "Sun-drenched marble bakery counter with fresh viennoiserie and espresso",
     features: [
       "Walk-In Pastry Case",
@@ -72,8 +71,7 @@ const ATMOSPHERES: TimeZoneAtmosphere[] = [
     soundscape: "Gentle courtyard fountain, French nu-disco, cheerful laughter",
     seating: "40 Seated Orangery Banquettes · Heated Terracotta Patio",
     signatureRitual: "Chilled Pugliese Burrata with peach sourdough & skin-contact orange wine",
-    image:
-      "https://images.unsplash.com/photo-1543007630-9710e4a00a20?q=80&w=1200&auto=format&fit=crop",
+    image: "/assets/atmosphere-midday.jpg",
     alt: "Light-filled glass conservatory dining room with greenery and terracotta",
     features: [
       "Retractable Glass Solarium Roof",
@@ -95,8 +93,7 @@ const ATMOSPHERES: TimeZoneAtmosphere[] = [
     soundscape: "Crackling wood fire, ambient vinyl soul, wine glasses clinking",
     seating: "80 Main Dining Room Seats · 12-Seat Chef’s Hearth Counter",
     signatureRitual: "Dry-Aged Sonoma Duck Crown carved tableside with Châteauneuf-du-Pape",
-    image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop",
+    image: "/assets/atmosphere-evening.jpg",
     alt: "Atmospheric candlelit restaurant dining room with warm ambient glow and wine cellar",
     features: [
       "Open Hearth Live Fire Counter",
