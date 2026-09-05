@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Surface & Canvas */
+  --color-background: #FAFAF8;
+  --color-surface-card: #FFFFFF;
+  --color-surface-subtle: #F4F4F0;
+  --color-surface-elevated: #FFFFFF;
+
+  /* Typography & Core Content */
+  --color-foreground: #121316;
+  --color-foreground-muted: #525866;
+  --color-foreground-subtle: #848C9E;
+
+  /* Brand Accents */
+  --color-primary: #B4461B;
+  --color-primary-hover: #963813;
+  --color-on-primary: #FFFFFF;
+
+  --color-accent-gold: #CBB590;
+  --color-accent-gold-subtle: #F7F4EE;
+  --color-accent-fresh: #1E6B52;
+  --color-accent-fresh-subtle: #E8F3EE;
+
+  /* Structural & Borders */
+  --color-border: #E8E8E2;
+  --color-border-hover: #C5C5BB;
+  --color-ring: #B4461B;
+
+  /* Functional / Validation */
+  --color-destructive: #C92A2A;
+  --color-destructive-bg: #FDF2F2;
+  --color-success: #1E6B52;
+  --color-success-bg: #E8F3EE;
+
+  /* Fonts */
+  --font-outfit: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-work-sans: 'Work Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-jetbrains-mono: 'JetBrains Mono', 'Space Mono', monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: var(--color-foreground);
+    background-color: var(--color-background);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #FAFAF8;
+    color: #121316;
+    font-family: var(--font-work-sans);
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-outfit);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #121316;
+  }
+
+  /* Custom scrollbar for modern browsers */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #FAFAF8;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #D9D9D2;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B8B8AD;
+  }
+
+  /* Selection style */
+  ::selection {
+    background-color: #F7EAE3;
+    color: #B4461B;
+  }
+}
+
+@layer utilities {
+  /* Apple-inspired subtle glass effect */
+  .glass-header {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  /* Typography shortcuts */
+  .font-display {
+    font-family: var(--font-outfit);
+  }
+
+  .font-body {
+    font-family: var(--font-work-sans);
+  }
+
+  .font-tabular {
+    font-family: var(--font-jetbrains-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Focus ring utility */
+  .focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-[#B4461B] focus-visible:ring-offset-2;
+  }
+
+  /* Safe area insets */
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 1rem);
+  }
+}
