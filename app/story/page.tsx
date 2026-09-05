@@ -179,14 +179,14 @@ export default function StoryPage() {
               <div className="bg-surface rounded-3xl border border-border overflow-hidden shadow-card hover:shadow-elevated transition-all duration-300">
                 <div className="relative h-64 w-full bg-surface-subtle">
                   <img
-                    src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=800&auto=format&fit=crop"
+                    src="/assets/founder-julian-ross.jpg"
                     alt="Chef Julian Ross"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-[center_20%]"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-4 right-4 text-white">
-                    <h3 className="text-lg font-bold font-display">Julian Ross</h3>
+                    <h3 className="text-lg font-bold font-display text-white">Julian Ross</h3>
                     <p className="text-xs font-mono text-accent-gold">Executive Chef & Co-Founder</p>
                   </div>
                 </div>
@@ -208,14 +208,14 @@ export default function StoryPage() {
               <div className="bg-surface rounded-3xl border border-border overflow-hidden shadow-card hover:shadow-elevated transition-all duration-300">
                 <div className="relative h-64 w-full bg-surface-subtle">
                   <img
-                    src="https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=800&auto=format&fit=crop"
+                    src="/assets/founder-antoine-mercier.jpg"
                     alt="Master Baker Antoine Mercier"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-[center_20%]"
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-4 right-4 text-white">
-                    <h3 className="text-lg font-bold font-display">Antoine Mercier</h3>
+                    <h3 className="text-lg font-bold font-display text-white">Antoine Mercier</h3>
                     <p className="text-xs font-mono text-accent-gold">Head Baker & Master Viennois</p>
                   </div>
                 </div>
@@ -362,7 +362,7 @@ export default function StoryPage() {
                   <div className="lg:col-span-5">
                     <div className="relative h-80 sm:h-96 w-full rounded-2xl overflow-hidden shadow-card">
                       <img
-                        src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=900&auto=format&fit=crop"
+                        src="/assets/story-sourdough-craft.jpg"
                         alt="Handcrafted sourdough boules and croissants"
                         className="w-full h-full object-cover"
                         loading="lazy"

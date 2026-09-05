@@ -53,7 +53,7 @@ export const PURVEYORS_DATA: Purveyor[] = [
       'Closed-Loop Whey Recycling for Local Compost',
     ],
     partneredSince: 2021,
-    image: 'https://images.unsplash.com/photo-1527153857715-3908f2ae5e81?q=80&w=1200&auto=format&fit=crop',
+    image: '/assets/purveyor-creamery.jpg',
   },
   {
     id: 'hudson-valley-micromill',
