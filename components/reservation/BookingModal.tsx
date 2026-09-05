@@ -18,6 +18,7 @@ import {
   User,
   Heart,
   AlertCircle,
+  X,
 } from "lucide-react";
 import { Modal } from "@/components/ui/Modal";
 import { Button } from "@/components/ui/Button";
@@ -245,46 +246,58 @@ export function BookingModal() {
       isOpen={isBookingOpen}
       onClose={handleResetAndClose}
       size="lg"
-      className="p-0 sm:p-0 max-h-[92vh] flex flex-col overflow-hidden bg-[#FAFAF8]"
+      showCloseButton={false}
+      className="p-0 sm:p-0 max-h-[88vh] sm:max-h-[90vh] flex flex-col overflow-hidden bg-[#FAFAF8]"
     >
       {/* Modal Top Header with Stepper */}
-      <div className="bg-white px-5 sm:px-8 py-5 border-b border-[#E8E8E2] shrink-0">
-        <div className="flex items-center justify-between">
+      <div className="bg-white px-4 sm:px-8 py-4 sm:py-5 border-b border-[#E8E8E2] shrink-0">
+        <div className="flex items-center justify-between gap-3">
           <div>
             <div className="flex items-center gap-2">
               <span className="inline-block w-2 h-2 rounded-full bg-[#B4461B]" />
-              <span className="text-[11px] uppercase tracking-widest font-semibold text-[#848C9E]">
+              <span className="text-[10px] sm:text-[11px] uppercase tracking-widest font-semibold text-[#848C9E]">
                 Maison &amp; Co. Table Booking
               </span>
             </div>
-            <h2 className="font-display text-xl sm:text-2xl font-bold text-[#121316] mt-0.5 tracking-tight">
+            <h2 className="font-display text-lg sm:text-2xl font-bold text-[#121316] mt-0.5 tracking-tight">
               {step === 1 && "Select Your Table & Time"}
               {step === 2 && "Guest Information & Notes"}
               {step === 3 && "Reservation Confirmed"}
             </h2>
           </div>
 
-          {/* Stepper indicator pills */}
-          <div className="flex items-center gap-1.5">
-            {[1, 2, 3].map((s) => (
-              <div
-                key={s}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  step === s
-                    ? "w-6 bg-[#B4461B]"
-                    : step > s
-                    ? "w-2 bg-[#1E6B52]"
-                    : "w-2 bg-[#E8E8E2]"
-                }`}
-                aria-label={`Step ${s}`}
-              />
-            ))}
+          {/* Stepper indicator pills & Close Button */}
+          <div className="flex items-center gap-2.5 sm:gap-4 shrink-0">
+            <div className="flex items-center gap-1.5">
+              {[1, 2, 3].map((s) => (
+                <div
+                  key={s}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    step === s
+                      ? "w-5 sm:w-6 bg-[#B4461B]"
+                      : step > s
+                      ? "w-2 bg-[#1E6B52]"
+                      : "w-2 bg-[#E8E8E2]"
+                  }`}
+                  aria-label={`Step ${s}`}
+                />
+              ))}
+            </div>
+
+            <button
+              type="button"
+              onClick={handleResetAndClose}
+              aria-label="Close modal"
+              className="p-1.5 -mr-1 text-[#848C9E] hover:text-[#121316] rounded-lg hover:bg-[#F4F4F0] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#B4461B]"
+            >
+              <X className="w-5 h-5" />
+            </button>
           </div>
         </div>
       </div>
 
       {/* Main Body with animated step transitions */}
-      <div className="p-5 sm:p-8 overflow-y-auto flex-1">
+      <div className="p-4 sm:p-8 overflow-y-auto flex-1 overscroll-contain">
         <AnimatePresence mode="wait">
           {/* STEP 1: TIME, DATE, PARTY, SEATING */}
           {step === 1 && (

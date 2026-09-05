@@ -191,7 +191,7 @@ export const Modal: React.FC<ModalProps> = ({
             )}
 
             {/* Modal Content */}
-            <div className="relative">{children}</div>
+            <div className="relative flex-1 min-h-0 flex flex-col overflow-hidden">{children}</div>
           </motion.div>
         </div>
       )}
